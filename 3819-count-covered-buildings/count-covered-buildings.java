@@ -22,7 +22,7 @@ class Solution {
     for (int[] building : buildings) {
       final int x = building[0];
       final int y = building[1];
-      if (northernmost[x] < y && y < southernmost[x] //
+      if (northernmost[x] < y && y < southernmost[x] 
           && westernmost[y] < x && x < easternmost[y])
         ++ans;
     }
