@@ -1,20 +1,24 @@
 class Solution {
-  public int sumFourDivisors(int[] nums) {
-    int ans = 0;
-    for (int num : nums) {
-      int divisor = 0;
-      for (int i = 2; i * i <= num; ++i)
-        if (num % i == 0) {
-          if (divisor == 0)
-            divisor = i;
-          else {
-            divisor = 0;
-            break;
-          }
+    public int sumFourDivisors(int[] nums) {
+        int totalSum = 0;
+        for (int number : nums) {
+            totalSum += getSumIfFourDivisors(number);
         }
-      if (divisor > 0 && divisor * divisor < num)
-        ans += 1 + num + divisor + num / divisor;
+        return totalSum;
     }
-    return ans;
-  }
+    private int getSumIfFourDivisors(int number) {
+        int divisorCount = 2;
+        int divisorSum = number + 1;
+        for (int i = 2; i <= number / i; ++i) {
+            if (number % i == 0) {
+                ++divisorCount;
+                divisorSum += i;
+                if (i * i != number) {
+                    ++divisorCount;
+                    divisorSum += number / i;
+                }
+            }
+        }
+        return divisorCount == 4 ? divisorSum : 0;
+    }
 }
