@@ -50,7 +50,7 @@ void processConversation() {
 
     cout << "When you’re actually good at LC, I don’t understand why you said you don’t know DSA." << endl;
 
-    cout << "Anyway, all the best for placements." << endl;
+    cout << "Anyway, I wish you all the best for your placements and future endeavors." << endl;
 
     bool requestAccepted = false; // my snap request wasnt accepted
     bool instagramText = true;
@@ -63,6 +63,8 @@ void processConversation() {
     cout << "And I have to do it on my own." << endl;
 
     cout << "For the path I want to take, referrals and recommendations don’t work." << endl;
+    cout << "Goodbye. The word "fool" no longer exists for me." << endl;
+
 }
 
 };
