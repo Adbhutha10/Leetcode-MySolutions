@@ -49,6 +49,10 @@ void processConversation() {
     cout << "I saw your LeetCode profile, LeetSync automation extension, and contests too." << endl;
 
     cout << "When you’re actually good at LC, I don’t understand why you said you don’t know DSA." << endl;
+    
+    cout << "After this, I realized not to trust anyone, especially the close ones." << endl;
+
+
 
     cout << "Anyway, I wish you all the best for your placements and future endeavors." << endl;
 
